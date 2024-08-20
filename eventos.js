@@ -4,6 +4,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
     button.addEventListener('click', () => {
         alert('Hola!');
+        event.stopPropagation();
     });
 
     const buttonContainer = 
@@ -12,4 +13,6 @@ document.addEventListener('DOMContentLoaded', () => {
     buttonContainer.addEventListener('click', () => {
         alert('Hola!, soy el div');
     });
+
+
 });
